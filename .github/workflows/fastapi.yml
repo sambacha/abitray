@@ -1,0 +1,24 @@
+name: fastapi
+
+on: push
+
+jobs:
+  python3:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v2
+
+      - name: Set up python
+        uses: actions/setup-python@v2
+        id: python3.7
+        with:
+          python-version: 3.7
+
+      - name: Install dependencies
+        id: pip3
+        run: pip3 install -r requirements.txt
+
+      - name: Run App
+        id: uvicorn
+        run: uvicorn main:app
