@@ -38,7 +38,6 @@ lockfile==0.12.2
 mccabe==0.6.1
 msgpack==1.0.1
 mypy-extensions==0.4.3
-noob==0.1.2
 packaging==20.8
 parso==0.8.1
 abil==0.2.1
