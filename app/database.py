@@ -17,9 +17,6 @@ abi = sqlalchemy.Table(
     Column("password_hash", String, nullable=True),
 )
 
-engine = sqlalchemy.create_engine(
-    DB_URI,
-    connect_args={"check_same_thread": False},
-)
+engine = sqlalchemy.create_engine(DB_URI, connect_args={"check_same_thread": False},)
 
 metadata.create_all(engine)
