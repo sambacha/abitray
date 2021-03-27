@@ -11,7 +11,7 @@ jobs:
 
       - name: Set up python
         uses: actions/setup-python@v2
-        id: python3.7
+        id: setup
         with:
           python-version: 3.7
 
