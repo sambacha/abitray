@@ -1,0 +1,13 @@
+docker-compose.yml
+.github/
+**/__pycache__
+.venv
+test.db
+node_modules/
+poetry.lock
+__pycache__
+.history
+.hypothesis/
+build/
+reports/
+.DS_Store
